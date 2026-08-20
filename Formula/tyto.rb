@@ -5,13 +5,13 @@
 class Tyto < Formula
   desc "Command-line interface for the Tyto Compute API"
   homepage "https://tyto.run"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://get.tyto.run/releases/v0.2.3/tyto-darwin-amd64", using: :nounzip
-      sha256 "5e5e98896827ae47a1572be5b4a8b10bb8ad5d7a5fa813e193a07f814c0c8a60"
+      url "https://get.tyto.run/releases/v0.2.4/tyto-darwin-amd64", using: :nounzip
+      sha256 "47c43ef7891f9b0e911bde381d868df6a80c44be4bc7d87794e4860660381abd"
 
       def install
         bin.install "tyto-darwin-amd64" => "tyto"
@@ -19,8 +19,8 @@ class Tyto < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://get.tyto.run/releases/v0.2.3/tyto-darwin-arm64", using: :nounzip
-      sha256 "0fa11d1f32e9f967c1200b35ee05b4535e814048003f01523d7959ffd815a0a4"
+      url "https://get.tyto.run/releases/v0.2.4/tyto-darwin-arm64", using: :nounzip
+      sha256 "82b8f7b0dec1bd4d51b00accb771c7d0f4555f8fae752434da1dfe5c3ce7770e"
 
       def install
         bin.install "tyto-darwin-arm64" => "tyto"
@@ -31,8 +31,8 @@ class Tyto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://get.tyto.run/releases/v0.2.3/tyto-linux-amd64", using: :nounzip
-      sha256 "e53a9a1de8597744c6cdebd7f0842b4a6979c0186e321b450aa7683632ec6763"
+      url "https://get.tyto.run/releases/v0.2.4/tyto-linux-amd64", using: :nounzip
+      sha256 "12fa158dbf49cdfba759c1a9178c01f6e172997eab42864579d3f09306a12a9a"
 
       def install
         bin.install "tyto-linux-amd64" => "tyto"
@@ -40,8 +40,8 @@ class Tyto < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://get.tyto.run/releases/v0.2.3/tyto-linux-arm64", using: :nounzip
-      sha256 "44ede9e9a7dc9a079fb96b2799e1f770eb2d18867a8214910a41de9d463d6dd8"
+      url "https://get.tyto.run/releases/v0.2.4/tyto-linux-arm64", using: :nounzip
+      sha256 "d1083fbf92fb68a1bdb02104204dd68dcddd33d612ad1cca1f19895c737cd0f6"
 
       def install
         bin.install "tyto-linux-arm64" => "tyto"
