@@ -5,13 +5,13 @@
 class Bonya < Formula
   desc "Command-line interface for the Bonya API"
   homepage "https://bonya.ai"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://get.bonya.ai/releases/v0.1.1/bonya-darwin-amd64", using: :nounzip
-      sha256 "3e9d5252422d7dd0fdb39c0791fa212a9ef9f818d42fb721abf75e1e1f597693"
+      url "https://get.bonya.ai/releases/v0.1.2/bonya-darwin-amd64", using: :nounzip
+      sha256 "5d996e31f488dcb75ca3b843d7748c3d12c14b261f5726e4894a2764265613df"
 
       def install
         bin.install "bonya-darwin-amd64" => "bonya"
@@ -19,8 +19,8 @@ class Bonya < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://get.bonya.ai/releases/v0.1.1/bonya-darwin-arm64", using: :nounzip
-      sha256 "dde08dff985096f4dae182719a1a3c73d06d20125ec333fd0689ff242ab3d6c6"
+      url "https://get.bonya.ai/releases/v0.1.2/bonya-darwin-arm64", using: :nounzip
+      sha256 "94231eae09bd78a073b49c80c91f79adf5572d33c257a1aa0fa30b35dad70a83"
 
       def install
         bin.install "bonya-darwin-arm64" => "bonya"
@@ -31,8 +31,8 @@ class Bonya < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://get.bonya.ai/releases/v0.1.1/bonya-linux-amd64", using: :nounzip
-      sha256 "56860b01a49b0dd70de4720a7478306265ed233c1fee808b182ce5f5fa863d3f"
+      url "https://get.bonya.ai/releases/v0.1.2/bonya-linux-amd64", using: :nounzip
+      sha256 "6e59ae26479b072dabc34ce332b7b1c440daf12589b9e53e8c239bccda10f6d2"
 
       def install
         bin.install "bonya-linux-amd64" => "bonya"
@@ -40,8 +40,8 @@ class Bonya < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://get.bonya.ai/releases/v0.1.1/bonya-linux-arm64", using: :nounzip
-      sha256 "524d14fd173b305296fa48e6659275fdd6865707bf84dbedbebd21c6b8d37a94"
+      url "https://get.bonya.ai/releases/v0.1.2/bonya-linux-arm64", using: :nounzip
+      sha256 "d9f4fabe7bfebe65fe67dc317a72398ee7327fae481867aeb78b2c6f56e3ffe3"
 
       def install
         bin.install "bonya-linux-arm64" => "bonya"
